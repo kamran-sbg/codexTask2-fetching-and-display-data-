@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 let url = "https://official-joke-api.appspot.com/random_joke";
 
-const RandomJokes = () => {
+const Jokes = () => {
   let [latefa, setlatefa] = useState({});
   const gjokes = async () => {
     let responde = await fetch(url);
@@ -29,4 +29,4 @@ const RandomJokes = () => {
   );
 };
 
-export default RandomJokes;
+export default Jokes;
